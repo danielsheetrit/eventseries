@@ -1,0 +1,17 @@
+//setup
+@import "./setup/functions";
+@import "./setup/mixins";
+@import "./setup/typography";
+@import "./setup/variables";
+
+//basic
+@import "./basic/base";
+@import "./basic/buttons";
+@import "./basic/helpers";
+@import "./basic/layout";
+
+//pages
+@import "./pages/home";
+
+//cmps
+@import "./cmps/header";
