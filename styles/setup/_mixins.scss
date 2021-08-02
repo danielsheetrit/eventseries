@@ -56,3 +56,9 @@
         }
     }
 }
+
+//headers mixin
+@mixin headers {
+    font-family: inter-semibold, -apple-system, sans-serif;
+    line-height: 1.2;
+}

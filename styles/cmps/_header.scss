@@ -1,18 +1,32 @@
 header {
+    margin-block-start: 1rem;
     background-color: transparent;
-    box-shadow: $boxs;
-    
+
     .logo {
-        width: rem(175px);
-        height: rem(30px);
+        width: rem(125px);
+        height: rem(20px);
         background: url(../assets/img/logo.svg) no-repeat;
     }
-
+    nav {
+        padding: rem(8px) 0 rem(8px) rem(8px);
+    }
+    a {
+        font-size: rem(15px);
+        font-family: inter-semibold;
+    }
     li:not(:last-child) {
-        padding: 1.2rem;
-       
+        margin-inline-end: rem(40px);
     }
     li:last-child {
-        padding: 1.2rem 0 1.2rem 1.2rem;
+        a {
+            padding: rem(14px) rem(24px);
+            background-color: $clr4;
+            border-radius: rem(24px);
+            color: $clr1;
+            transition: .3s;
+            &:hover {
+                background-color: darken($color: $clr4, $amount: 15%);
+            }
+        }
     }
 }

@@ -1,0 +1,42 @@
+.home {
+    margin-block-start: rem(32px);
+    margin-block-end: rem(104px);
+
+    .hero {
+        height: rem(600px);
+        background: url(https://res.cloudinary.com/dvbojtbzc/image/upload/v1627909953/3gray_yazh3y.jpg) no-repeat;
+        background-position: center;
+        object-fit: cover;
+        background-color: $clr2;
+        border-radius: rem(24px);
+        text-align: center;
+        user-select: none; 
+        
+        h3 {
+            color: $clr4;
+        }
+
+        span {
+            margin-block-start: rem(32px);
+            font-family: inter-semibold;
+            font-size: rem(15px); 
+            color: $clr1;
+        }
+
+        button {
+            margin-block-start: rem(64px);
+            font-family: inter-semibold;
+            font-size: 1rem;
+            background-color: $clr4;
+            color: $clr1;
+            border: none;
+            padding: 1rem rem(24px);
+            border-radius: rem(100px);
+            transition: .3s;
+
+            &:hover {
+                background-color: darken($color: $clr4, $amount: 15%);
+            }
+        }
+    }
+}

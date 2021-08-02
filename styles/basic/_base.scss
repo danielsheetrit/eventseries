@@ -5,19 +5,36 @@
 }
 html,
 body {
-  font-family: regular, -apple-system, sans-serif;
+  font-family: inter-regular, -apple-system, sans-serif;
   color: $clr2;
   line-height: 1.2;
+  letter-spacing: -0.03em;
+  position: relative;
 }
 h1 {
-  font-family: extra-bold, -apple-system, sans-serif;
+  font-family: inter-semibold, -apple-system, sans-serif;
+  line-height: 1.1;
+  font-size: rem(96px);
 }
-h2,
-h3,
-h4,
-h5,
+h2 {
+  font-size: rem(85px);
+  @include headers
+}
+h3 {
+  font-size: rem(64px);
+  @include headers
+}
+h4 {
+  font-size: rem(53px);
+  @include headers
+}
+h5 {
+  font-size: rem(32px);
+  @include headers
+}
 h6 {
-  font-family: semi-bold, -apple-system, sans-serif;
+  font-size: rem(26px);
+  @include headers
 }
 ul {
   list-style: none;
