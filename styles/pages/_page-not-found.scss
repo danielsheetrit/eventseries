@@ -1,0 +1,21 @@
+.page-not-found {
+    margin-block-start: rem(104px);
+    margin-block-end: rem(104px);
+    .pagenotfound-hero {
+        width: 350px;
+        height: 150px;       
+        background: url(https://res.cloudinary.com/dvbojtbzc/image/upload/v1627990602/404_ry78ji.svg) no-repeat;
+        background-color: transparent;
+    }
+    h5 {
+        margin-block-start: rem(32px);
+    }
+    a {
+        margin-block-start: rem(64px);
+        text-decoration: underline;
+        font-family: inter-semibold;
+        &:hover {
+            color: $clr4;
+        }
+    }
+}

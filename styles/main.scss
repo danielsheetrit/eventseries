@@ -9,9 +9,11 @@
 @import "./basic/buttons";
 @import "./basic/helpers";
 @import "./basic/layout";
+@import "./basic/animation";
 
 //pages
 @import "./pages/home";
+@import "./pages/page-not-found";
 
 //cmps
 @import "./cmps/header";

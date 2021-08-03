@@ -12,6 +12,7 @@ export default function Home() {
         <button>
           Find a party for tonight ➝
         </button>
+        <div className="scroll-down-animation"></div>
       </div>
     </section>
   )
