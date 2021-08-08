@@ -1,6 +1,6 @@
 .home {
     margin-block-start: rem(32px);
-    margin-block-end: rem(104px);
+
     .hero {
         height: rem(600px);
         background: url(https://res.cloudinary.com/dvbojtbzc/image/upload/v1627909953/3gray_yazh3y.jpg) no-repeat;
@@ -9,40 +9,40 @@
         background-color: $clr2;
         border-radius: rem(24px);
         text-align: center;
-        user-select: none; 
-        h3 {
+        user-select: none;
+        margin-block-end: rem(120px);
+        h2 {
             color: $clr4;
             margin-block-start: rem(64px);
+            font-size: rem(64px);
         }
         span {
+            font-size: rem(14px);
             margin-block-start: rem(32px);
             font-family: inter-semibold;
-            font-size: rem(15px); 
             color: $clr1;
         }
         button {
+            @include button;
             margin-block-start: rem(64px);
-            font-family: inter-semibold;
             font-size: 1rem;
-            background-color: $clr4;
-            color: $clr1;
             border: none;
             padding: 1rem rem(24px);
             border-radius: rem(100px);
-            transition: .3s;
-            &:hover {
-                background-color: darken($color: $clr4, $amount: 15%);
-            }
         }
     }
     @media (max-width: $normal-breakpoint) {
-        h3 {
-            font-size: rem(44px);
+        .hero {
+            h1 {
+                font-size: rem(44px);
+            }
         }
     }
     @media (max-width: $narrow-breakpoint) {
-        h3 {
-            font-size: rem(36px);
+        .hero {
+            h1 {
+                font-size: rem(36px);
+            }
         }
     }
 }

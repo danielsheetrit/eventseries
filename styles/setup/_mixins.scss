@@ -62,3 +62,13 @@
     font-family: inter-semibold, -apple-system, sans-serif;
     line-height: 1.2;
 }
+
+@mixin button {
+    background-color: $clr4;
+    font-family: inter-semibold;
+    color: $clr1;
+    transition: 0.3s;
+    &:hover {
+        background-color: darken($color: $clr4, $amount: 15%);
+    }
+}

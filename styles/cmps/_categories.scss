@@ -1,0 +1,57 @@
+.categories {
+    text-align: center;
+    margin-block-end: rem(120px);
+    .categories-header {
+        h3 {
+            font-size: rem(48px);
+        }
+        p {
+            font-size: rem(18px);
+            margin-block-start: rem(32px);
+        }
+    }
+    .categories-grid {
+        margin-block-start: rem(64px);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+        gap: 30px;
+
+        article {
+            text-align: left;
+            border: 1px solid $clr3;
+            border-radius: rem(24px);
+            padding: 1.2rem;
+
+            div:last-of-type {
+                align-items: flex-start;
+            }
+            svg {
+                margin-bottom: rem(10px);
+                color: $clr4;
+            }
+            .category-img {
+                width: 175px;
+                height: 175px;
+                border-radius: rem(24px);
+                margin-inline-end: rem(32px);
+                img {
+                    border-radius: rem(24px);
+                }
+            }
+            h5 {
+                font-size: rem(14px);
+            }
+            p {
+                font-size: rem(16px);
+                margin-block-start: rem(8px);
+            }
+            a {
+                text-decoration: underline;
+                font-family: inter-semibold;
+                margin-block-start: 1rem;
+                font-size: rem(14px);
+                border-radius: rem(24px);
+            }
+        }
+    }
+}
