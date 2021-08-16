@@ -1,6 +1,8 @@
+import Link from 'next/link'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+
 export default function Categories() {
     return (
         <div className="categories">

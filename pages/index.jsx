@@ -1,12 +1,16 @@
 import { API_URL } from '../config/index'
 import axios from 'axios'
+
 import Categories from '../components/categories'
+import Header from '../components/Header'
+import UpcomingEvents from '../components/UpcomingEvents'
 
 export default function Home({ events }) {
 
   return (
     <section className="home container">
-      <div className="hero flex column align-center justify-center">
+      <div className="hero flex full column align-center">
+        <Header />
         <h2>
           All the crazy sh*t i did tonight, <br />
           those will be the best memories
@@ -19,6 +23,7 @@ export default function Home({ events }) {
         </button>
         <div className="scroll-down-animation"></div>
       </div>
+      <UpcomingEvents {...events} />
       <Categories />
     </section>
   )

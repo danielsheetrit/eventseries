@@ -1,20 +1,18 @@
 .home {
-    margin-block-start: rem(32px);
 
     .hero {
-        height: rem(600px);
-        background: url(https://res.cloudinary.com/dvbojtbzc/image/upload/v1627909953/3gray_yazh3y.jpg) no-repeat;
+        height: 100vh;
+        width: 100%;
+        background: url(https://res.cloudinary.com/dvbojtbzc/image/upload/v1628441459/hero-gray_yjvlid.jpg) no-repeat;
         background-position: center;
-        object-fit: cover;
-        background-color: $clr2;
-        border-radius: rem(24px);
         text-align: center;
         user-select: none;
-        margin-block-end: rem(120px);
+        margin-block-end: rem(104px);
         h2 {
             color: $clr4;
-            margin-block-start: rem(64px);
+            margin-block-start: rem(120px);
             font-size: rem(64px);
+            width: 95%;
         }
         span {
             font-size: rem(14px);
@@ -33,14 +31,14 @@
     }
     @media (max-width: $normal-breakpoint) {
         .hero {
-            h1 {
+            h2 {
                 font-size: rem(44px);
             }
         }
     }
     @media (max-width: $narrow-breakpoint) {
         .hero {
-            h1 {
+            h2 {
                 font-size: rem(36px);
             }
         }
