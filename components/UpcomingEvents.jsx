@@ -6,7 +6,6 @@ import Gesture from '../public/img/right-gesture.svg'
 export default function UpcomingEvents({ events }) {
 
     return (
-
         <div className="upcoming-events">
             <h2>Celebrating life,<br />
                 with awesome events
@@ -15,7 +14,6 @@ export default function UpcomingEvents({ events }) {
                 <p>We want you with us!<br />
                     Tonight we are celebrating life <br /> with amazing events right here, right now.
                 </p>
-
             </div>
             <Gesture />
             <div className="car">

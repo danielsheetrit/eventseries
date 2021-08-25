@@ -26,11 +26,12 @@
             width: 100%;
             height: 200px;
             img {
-                border-radius: 8px;
+                object-fit: cover;
+                border-radius: 5px;
             }
         }
         .upcoming-desc-container {
-            padding: rem(12px) rem(8px) 0;
+            padding: rem(12px) rem(0px) 0;
             .upcoming-desc-header {
                 margin-block-end: rem(32px);
             }
@@ -41,7 +42,7 @@
                 @include button;
                 font-size: rem(14px);
                 padding: 8px 16px;
-                border-radius: 24px;
+                border-radius: 5px;
             }
             .upcoming-desc-seperator {
                 width: 1px;

@@ -1,0 +1,35 @@
+.single-event {
+    margin-block-start: rem(64px);
+    .single-event-header {
+        h1 {
+            font-size: rem(48px);
+        }
+        > div {
+            margin-block-start: 1rem;
+        }
+        p {
+            font-size: rem(15px);
+            font-family: inter-semibold;
+            margin-inline-start: rem(6px);
+        }
+    }
+
+    .single-event-main {
+        margin-block-start: rem(64px);
+    }
+
+    .accrodion-container {
+        > * {
+            margin-block-end: rem(12px);
+        }
+    }
+
+    .single-event-img {
+        margin-inline-end: rem(32px);
+        min-width: 570px;
+        height: 400px;
+        img {
+            border-radius: 8px;
+        }
+    }
+}

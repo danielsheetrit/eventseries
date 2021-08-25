@@ -10,7 +10,7 @@ export default function Home({ events }) {
   return (
     <section className="home container">
       <div className="hero flex full column align-center">
-        <Header />
+        <Header container="container" />
         <h2>
           All the crazy sh*t i did tonight, <br />
           those will be the best memories

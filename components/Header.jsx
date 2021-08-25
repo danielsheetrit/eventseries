@@ -6,7 +6,7 @@ import Logo from '../public/img/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-export default function Header() {
+export default function Header({ linksColor, container }) {
 
     const router = useRouter()
     const [hamburgerMode, setHamburgerMode] = useState(false)
@@ -17,8 +17,8 @@ export default function Header() {
     }, [hamburgerMode])
 
     return (
-        <header className="container">
-            <div className="header-container flex full space-between align-center">
+        <header className={container}>
+            <div className="flex space-between align-center">
                 <div
                     onClick={() => router.push('/')}
                     className="logo"
@@ -28,16 +28,24 @@ export default function Header() {
                 <nav>
                     <ul className="flex align-center">
                         <li onClick={() => setHamburgerMode(false)}>
-                            <Link href='/'>Home</Link>
+                            <Link href='/'>
+                                <a style={{ color: linksColor }}>Home</a>
+                            </Link>
                         </li>
                         <li onClick={() => setHamburgerMode(false)}>
-                            <Link href="/events">Events</Link>
+                            <Link href="/events">
+                                <a style={{ color: linksColor }}>Events</a>
+                            </Link>
                         </li>
                         <li onClick={() => setHamburgerMode(false)}>
-                            <Link href="/about">About</Link>
+                            <Link href="/about">
+                                <a style={{ color: linksColor }}>About</a>
+                            </Link>
                         </li>
                         <li onClick={() => setHamburgerMode(false)}>
-                            <Link href="/about">Sign up</Link>
+                            <Link href="/about">
+                                <a>Sign up</a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -53,4 +61,10 @@ export default function Header() {
             </div>
         </header>
     )
+}
+
+Header.defaultProps = {
+    linksColor: 'white',
+    container: '',
+    fill: '#222222'
 }

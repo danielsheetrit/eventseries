@@ -1,12 +1,11 @@
 header {
     margin-block-start: 1rem;
     background-color: transparent;
-
+   
     .logo {
         width: rem(150px);
         height: auto;
         cursor: pointer;
-        margin-inline-start: 1rem;
     }
     nav {
         display: flex;
@@ -16,7 +15,6 @@ header {
     a {
         font-size: rem(15px);
         font-family: inter-semibold;
-        color: $clr1;
     }
     li:not(:last-child) {
         margin-inline-end: rem(40px);
@@ -26,7 +24,7 @@ header {
             display: block;
             padding: rem(14px) rem(24px);
             background-color: $clr4;
-            border-radius: rem(24px);
+            border-radius: rem(5px);
             color: $clr1;
             transition: 0.3s;
             &:hover {
@@ -47,7 +45,7 @@ header {
             z-index: 100;
             display: block;
             position: absolute;
-            right: -10px;
+            right: -14px;
         }
 
         nav {
