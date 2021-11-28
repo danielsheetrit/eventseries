@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import Carousle from '../components/Carousle'
-import Gesture from '../public/img/right-gesture.svg'
 
 export default function UpcomingEvents({ events }) {
 
@@ -15,27 +14,37 @@ export default function UpcomingEvents({ events }) {
                     Tonight we are celebrating life <br /> with amazing events right here, right now.
                 </p>
             </div>
-            <Gesture />
+
             <div className="car">
                 <Carousle>
                     {events.slice(0, 6).map(evt => {
                         return (
                             <article key={evt.id}>
+
                                 <div className="upcoming-img-container">
-                                    <img src={evt.image} alt="" />
+                                    <img
+                                        src={evt.image}
+                                        alt={evt.name}
+                                    />
                                 </div>
+
                                 <div className="upcoming-desc-container">
+
                                     <div className="upcoming-desc-header flex align-center space-between">
                                         <h4>{evt.name}</h4>
                                         <Link href={`/events/${evt.id}`}>Join us</Link>
                                     </div>
-                                    <div className="flex align-center space-between">
+
+                                    <div
+                                        className="upcoming-desc-main flex align-center space-between"
+                                    >
                                         <span>{evt.date}</span>
                                         <div className="upcoming-desc-seperator"></div>
                                         <span>{evt.time}</span>
                                         <div className="upcoming-desc-seperator"></div>
                                         <span>{evt.venue}</span>
                                     </div>
+
                                 </div>
                             </article>
                         )

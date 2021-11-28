@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
+
 import Link from 'next/link'
 import Logo from '../public/img/logo.svg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header({ linksColor, container }) {
 
@@ -17,7 +18,7 @@ export default function Header({ linksColor, container }) {
     }, [hamburgerMode])
 
     return (
-        <header className={container}>
+        <header className="container">
             <div className="flex space-between align-center">
                 <div
                     onClick={() => router.push('/')}
@@ -44,7 +45,10 @@ export default function Header({ linksColor, container }) {
                         </li>
                         <li onClick={() => setHamburgerMode(false)}>
                             <Link href="/about">
-                                <a>Sign up</a>
+                                <a>
+                                    Sign in
+                                    <FontAwesomeIcon icon={faSignInAlt} />
+                                </a>
                             </Link>
                         </li>
                     </ul>

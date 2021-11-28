@@ -68,6 +68,7 @@
     font-family: inter-semibold;
     color: $clr1;
     transition: 0.3s;
+    border-radius: rem(5px);
     &:hover {
         background-color: darken($color: $clr4, $amount: 15%);
     }
